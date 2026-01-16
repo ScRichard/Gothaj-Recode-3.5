@@ -1,79 +1,82 @@
-# GOTHAJ CLIENT UNRELEASED VERSION 3.5
+# Gothaj Recode 3.5 — Source Code
 
-This is only source code of the client.
+## Features
 
-# FEATURES
-## **Event Bus**
-Custom event bus for handling minecraft events
-## **UI**
-Modern uis for modules and so on
-## **Commands** 
-For handling binds and toggles
-## **Client Settings** 
-For setting up blur and bloom
-## **Modules** 
-Smaller sections of modules COMBAT, MOVEMENT, PLAYER, VISUALS, CLIENT
-## **Binds** 
-Modules can be binded on Mouse and Keyboard too
-## **Scripts** 
-Scripts setup for JavaScript modules (unfinished variabiles)
-## **Utilities**
-- Animations from easings.net
-- Buttons
-- Client
-- File Saving System and Config system
-- Font System
-- Inventory
-- Math
-- Noise
-- Move
-- Notifications
-- render
-- resource
-- rotation
-- Scissors
-- Shader
-- Target
-- UI
-## **Value System** based on Parents
+### Event Bus
+Custom event bus used to subscribe and react to Minecraft/client events.
+
+### UI
+Modern UI for modules, settings, and client UX.
+
+### Commands
+Command system for toggling features, managing binds, and changing settings.
+
+### Client Settings
+Client settings for visual effects such as blur and bloom.
+
+### Modules
+Modules are split into categories:
+- COMBAT
+- MOVEMENT
+- PLAYER
+- VISUALS
+- CLIENT
+
+### Binds
+Modules can be bound to both **keyboard** and **mouse**.
+
+### Scripts (WIP)
+JavaScript-based scripting for modules.
+
+### Utilities
+Shared client utilities, including:
+- animations (easings)
+- buttons/components
+- config & file saving system
+- font system
+- inventory / math / noise helpers
+- movement, notifications
+- rendering utilities, resources, rotation
+- scissors/clipping, shaders
+- targeting, UI helpers
+
+### Value System (parent-based)
+Typed settings/value system:
 - Boolean
 - Category
 - Color
-- Descritpion
-- Loaction
+- Description
+- Location
 - Mode
 - Multiple Boolean
 - Number
 - Range
 
-# Step by step guide
+---
 
-### Step 1: Download MCP 1.8.8
-1. Download **Mod Coder Pack (MCP) 1.8.8** from [modcoderpack.com](https://www.modcoderpack.com).
-2. Extract **MCP.zip** into a new folder.
+## Setup (MCP 1.8.8)
 
-### Step 2: Prepare Minecraft
-1. Open **Minecraft Launcher**.
+### Prerequisites
+- Minecraft **1.8.8** installed and launched at least once
+- **MCP 1.8.8** (Mod Coder Pack)
+- IDE: IntelliJ IDEA / Eclipse / VS Code (recommended: IntelliJ)
+
+### Step 1 — Download MCP 1.8.8
+1. Download **Mod Coder Pack (MCP) 1.8.8** from https://www.modcoderpack.com
+2. Extract `MCP.zip` into a new folder.
+
+### Step 2 — Prepare Minecraft
+1. Open Minecraft Launcher
 2. Run **Minecraft 1.8.8** once, then close it.
 
-### Step 3: Set Up MCP
-1. Go to the extracted **MCP folder**.
-2. Run **`decompile.bat`** to set up the project.
+### Step 3 — Decompile with MCP
+1. Open the extracted MCP folder
+2. Run `decompile.bat`
 
-### Step 4: Open in Your IDE
-1. Open the **MCP folder** in your favorite IDE (IntelliJ, Eclipse, or VS Code).
+### Step 4 — Add Gothaj Client source
+1. Open the MCP folder in your IDE
+2. Delete the files inside the `./src` folder (keep the folder)
+3. Clone this repository into `./src`:
 
-### Step 5: Debug Client
-1. Run the Minecraft client from your IDE to check if everything is set up correctly.
-
-### Step 6: Final Steps
-1. After confirming everything works, close both the client and the IDE.
-2. Delete the files in the **/src** folder.
-3. Clone the repository from **`https://github.com/ScRichard/GOTHAJ_RECODE_UNRELEASED.git`** into the **/src** folder.
-4. Run the client again to make sure everything is working.
-
-### Done!
-
-
-# License
-Project is licensed by MIT license, full license you can find in ```LICENSE``` file
+```bash
+git clone https://github.com/ScRichard/GOTHAJ_RECODE_UNRELEASED.git src
